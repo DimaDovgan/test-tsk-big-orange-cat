@@ -12,5 +12,5 @@ export default defineConfig({
     setupFiles: '.vitest/setup',
     include: ['**/test.{ts,tsx}']
   },
-  base: '/vite-deploy/'
+  base: '/test-tsk-big-orange-cat/'
 })
