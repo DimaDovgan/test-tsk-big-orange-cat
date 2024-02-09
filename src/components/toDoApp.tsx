@@ -4,7 +4,7 @@ import TodoForm from './toDoForm'
 import TodoList from './toDoList'
 
 interface Todo {
-  id: number
+  id: string
   text: string
   complet: boolean
 }

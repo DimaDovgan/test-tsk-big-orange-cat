@@ -4,7 +4,6 @@ function App() {
   return (
     <div>
       <ToDoApp />
-      <p>hello</p>
     </div>
   )
 }

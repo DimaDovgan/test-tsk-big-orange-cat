@@ -9,9 +9,10 @@ describe('TEST APP', () => {
     const addButton = screen.getByText('Add Todo')
     fireEvent.click(addButton)
     const todoListItems = screen.getAllByRole('listitem')
-    const isTaskAddedToList = todoListItems.some((item) =>
-      item.textContent.includes(newTaskText)
-    )
+    const isTaskAddedToList = todoListItems.some((item) => {
+      const textContent = item.textContent
+      return textContent && textContent.includes(newTaskText)
+    })
     expect(isTaskAddedToList).toBe(true)
   })
 
